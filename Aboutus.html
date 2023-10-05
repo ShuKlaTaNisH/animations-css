@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="aboutus.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+
+    <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Four card feature section</title>
+  <link rel="stylesheet" href="styles.css">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,400;0,600;1,200;1,400;1,600&display=swap"
+    rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+</head>
+
+
+<body class="">
+    <!-- nav -->
+    <nav>
+        <div class="navbar">
+            <div class="logo"><a href="#">The Education Jar</a></div>
+            <ul class="links">
+                <li><a href="/Home.html">Home</a></li>
+                <li><a href="/Aboutus.html">About Us</a></li>
+                <li><a href="/Courses.html">Courses</a></li>
+                <li><a href="Contact">Contact</a></li>
+            </ul>
+            <a href="#" class="action_btn">Get Started</a>
+            <div class="toggle_btn">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+
+        <div class="dropdown_menu">
+            <li><a href="/Home.html">Home</a></li>
+            <li><a href="/Aboutus.html">About Us</a></li>
+            <li><a href="/Courses.html">Courses</a></li>
+            <li><a href="Contact">Contact</a></li>
+            <li><a href="#" class="action_btn">Get Started</a></li>
+        </div>
+
+        <script>
+            const toggleBtn= document.querySelector('.toggle_btn')
+            const toggleBtnIcon= document.querySelector('.toggle_btn i')
+            const dropDownMenu= document.querySelector('.dropdown_menu')
+
+        toggleBtn.onclick =function (){
+            dropDownMenu.classList.toggle('open')
+            const isOpen = dropDownMenu.classList.contains('open')
+
+            toggleBtnIcon.classList = isOpen
+            ? 'fa-solid fa-xmark'
+            : 'fa-solid fa-bars'
+        }
+        </script>
+    </nav>
+<main>
+    <body class="main">
+        <div class="header">
+          <h1>Welcome to The Education Jar</h1><br>
+          <p>"Education is not just about going to school and getting a degree. It's about widening your knowledge and absorbing the truth about life."</p>
+         
+            <div>
+                <img src="./31e1a591d4d9b90145fb35417f17a625.jpg" alt="">
+            </div>
+        </div>
+        </div>
+        <div class="row1-container">
+          <div class="box box-down cyan">
+            <h2> Personalized Learning</h2><br>
+            <p>Our expert educators provide one-on-one attention to ensure that each student receives the support they need.</p>
+            <img src="https://assets.codepen.io/2301174/icon-supervisor.svg" alt="">
+          </div>
+      
+          <div class="box red">
+            <h2>Comprehensive Programs</h2><br>
+            <p>From admission to convocation, we offer end-to-end solutions to make your academic journey seamless.</p>
+            <img src="https://assets.codepen.io/2301174/icon-team-builder.svg" alt="">
+          </div>
+      
+          <div class="box box-down blue">
+            <h2>Cutting-Edge Technology</h2><br>
+            <p>Our online platform is user-friendly and equipped with the latest technology to enhance your learning experience.</p>
+            <img src="https://assets.codepen.io/2301174/icon-calculator.svg" alt="">
+          </div>
+        </div>
+        <div class="row2-container">
+          <div class="box orange">
+            <h2>Affordable Pricing</h2><br>
+            <p>We believe that quality education should be accessible to everyone, which is why we offer competitive pricing and flexible payment options.</p>
+            <img src="https://assets.codepen.io/2301174/icon-karma.svg" alt="">
+          </div>
+        </div>
+         
+        <h2 class="divider line one-line" contenteditable>"Learning never exhausts the mind." - Leonardo da Vinci</h2>
+          
+            <h1 class="mh">About The Education Jar</h1>
+            <div class="wrapper">
+              <blockquote class="stacked">
+                
+                <p>
+                  The Education Jar is a new age Edtech company that provides quality online education with end-to-end solutions. We cater to all your academic needs - from admission to convocation. Our aim is to make education accessible to everyone, regardless of their geographical location or financial status.
+                </p>
+              </blockquote>
+              <blockquote class="shadow">
+                <p>
+                  At The Education Jar, we believe in providing our students with a personalized and enriching learning experience. Our online classes are taught by expert educators who are passionate about their subjects and are dedicated to helping students achieve their academic goals. We offer a wide range of courses and programs, from elementary school to postgraduate studies, to ensure that there is something for everyone. Join us today and discover the power of quality online education.
+                </p>
+              </blockquote>
+             
+          </div> 
+      </body>
+      
+</main>
+
+
+			
+<footer class="footer-distributed">
+<div class="footer-left">
+
+  <p class="footer-links">
+      <a class="link-1" href="#">Home</a>
+
+      <a href="/Home.html">Home</a>
+
+      <a href="/Aboutus.html">About Us</a>
+
+      <a href="">Courses</a>
+
+      <a href="">Contact</a>
+  </p>
+
+  <p>The Education Jar &copy; 2023</p>
+</div>
+
+</footer>
+
+</body>
+
+
+
+</html>
